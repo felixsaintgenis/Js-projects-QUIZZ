@@ -28,3 +28,9 @@
 10. Suivre le score de l'utilisateur pour rendre le jeu plus amusant! Donc, chaque fois qu'une réponse est correcte, ajoutez 1 point au score (Indice: je vais utiliser le pouvoir des fermetures pour cela, mais vous n'avez pas à le faire, faites-le avec les outils dont vous vous sentez plus à l'aise point).
 
 11. Afficher le score dans la console. Utilisez une autre méthode pour cela.
+
+----
+
+* :recycle: Forker le repo.
+* :arrow_right_hook: Faire une branch
+*  :twisted_rightwards_arrows: Faire une `PR` sur le repo Originel.
