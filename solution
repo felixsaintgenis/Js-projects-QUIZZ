@@ -1,0 +1,35 @@
+function Quizz () {
+  
+  this.questionList = [];
+  
+  this.newQuestion = function (question,pos1,pos2,pos3,pos4, answer){
+    this.questionList.push({
+      'question': question,
+      '1' : pos1,
+      '2' : pos2,
+      '3' : pos3,
+      '4' : pos4,
+      'answer' : answer
+    });
+  }
+  
+  this.newGame = function () {
+    var randomNumber = Math.floor(Math.random() * this.questionList.length)
+    var selectedQuestion = this.questionList[randomNumber];
+    var answer = prompt(` ${this.questionList[randomNumber]["question"]}
+      \n ${this.questionList[randomNumber]["1"]}
+      \n ${this.questionList[randomNumber]["2"]}
+      \n ${this.questionList[randomNumber]["3"]}
+      \n ${this.questionList[randomNumber]["4"]}`)
+    
+  if(answer === this.questionList[randomNumber]['answer']) {
+    console.log('This is the right answer')
+  } else {
+     console.log('This is the wrong answer')
+  }
+  }
+}
+
+test1 = new Quizz ();
+test1.newQuestion('Quel est mon prénom ?','Felix','Robert','Albert','Capucine','Felix')
+test1.newGame()
